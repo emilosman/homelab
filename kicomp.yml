@@ -1,0 +1,25 @@
+---
+- name: Provision Alpine Linux container with Podman
+  hosts: localhost
+  collections:
+    - containers.podman
+  tasks:
+    - name: Pull Alpine Linux image
+      containers.podman.podman_image:
+        name: alpine
+        tag: latest
+        state: present
+
+    - name: Run Alpine Linux container
+      containers.podman.podman_container:
+        name: kicomp
+        image: alpine:latest
+        state: started
+        command: sleep infinity
+        detach: true
+        rm: true
+
+    - name: Install packages inside Alpine container
+      containers.podman.podman_container_exec:
+        name: kicomp
+        command: apk add --no-cache git
