@@ -19,6 +19,11 @@
         detach: true
         rm: true
 
+    - name: Create admin group
+      containers.podman.podman_container_exec:
+        name: kicomp
+        command: addgroup admin
+
     - name: Install packages inside Alpine container
       containers.podman.podman_container_exec:
         name: kicomp
