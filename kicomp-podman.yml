@@ -24,6 +24,11 @@
         name: kicomp
         command: sh -c "getent group admin || addgroup admin"
 
+    - name: Ensure storage group exists
+      containers.podman.podman_container_exec:
+        name: kicomp
+        command: sh -c "getent group storage || addgroup storage"
+
     - name: Ensure user emil exists
       containers.podman.podman_container_exec:
         name: kicomp
