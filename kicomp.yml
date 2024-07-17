@@ -23,3 +23,8 @@
       containers.podman.podman_container_exec:
         name: kicomp
         command: apk add --no-cache git
+
+    - name: Create storage mountpoints if they don't exist
+      containers.podman.podman_container_exec:
+        name: kicomp
+        command: mkdir -p /mnt/md0 /mnt/bk1
