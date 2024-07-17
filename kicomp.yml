@@ -24,6 +24,16 @@
         name: kicomp
         command: sh -c "getent group admin || addgroup admin"
 
+    - name: Ensure user emil exists
+      containers.podman.podman_container_exec:
+        name: kicomp
+        command: sh -c "id -u emil &>/dev/null || adduser -D emil"
+
+    - name: Add emil user to admin group
+      containers.podman.podman_container_exec:
+        name: kicomp
+        command: adduser emil admin
+
     - name: Install git
       containers.podman.podman_container_exec:
         name: kicomp
