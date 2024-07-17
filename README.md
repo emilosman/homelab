@@ -2,5 +2,5 @@
 _"Learning happens in the lab"_
 
 ## todo
-- [ ] create groups and users
+- [x] create groups and users
 - [ ] mount storage
