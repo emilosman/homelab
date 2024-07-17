@@ -19,12 +19,12 @@
         detach: true
         rm: true
 
-    - name: Create admin group
+    - name: Ensure admin group exists
       containers.podman.podman_container_exec:
         name: kicomp
-        command: addgroup admin
+        command: sh -c "getent group admin || addgroup admin"
 
-    - name: Install packages inside Alpine container
+    - name: Install git
       containers.podman.podman_container_exec:
         name: kicomp
         command: apk add --no-cache git
