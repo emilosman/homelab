@@ -15,7 +15,7 @@ resource "libvirt_domain" "terraform_test" {
     name = "terraform_test"
     memory = 512
     vcpu   = 1
-    type   = "kvm"
+    type   = "hvf"
 
     # Specify the path to the QEMU emulator
     emulator = "/opt/homebrew/bin/qemu-system-aarch64"
