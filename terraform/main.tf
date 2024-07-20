@@ -31,3 +31,10 @@ resource "libvirt_domain" "terraform_test" {
     }
 }
 
+resource "libvirt_volume" "terraform_test" {
+  name = "terraform_test.img"
+  pool = "default"
+  format = "qcow2"
+  size = 10240 # Size in megabytes
+}
+
