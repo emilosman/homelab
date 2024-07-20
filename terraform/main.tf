@@ -23,5 +23,11 @@ resource "libvirt_domain" "terraform_test" {
     # Specify the machine type suitable for your architecture
     machine = "virt"
 
+    # Console configuration
+    console {
+      type = "pty"
+      target_port = "0"
+      target_type = "serial"
+    }
 }
 
