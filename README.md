@@ -17,7 +17,7 @@ Scenarios:
 
 ## Where?
 - I want my solutions to be portable and run on different hardware.  
-- I want to be able to test my solutions comfortably on my laptop, then deploy on my personal home server.
+- I want to test my solutions comfortably on my laptop and deploy them on my personal home server.
 - Use virtualization and containerization for portability.
 
 Hardware at my disposal:
