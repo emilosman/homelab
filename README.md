@@ -1,6 +1,9 @@
 # Homelab
-- _"Learning happens in the lab"_
-- Using the Trivium method of general grammar, formal logic, and classical rhetoric to systematize my studies.
+> _"Learning happens in the lab"_
+
+Using the Trivium method of general grammar, formal logic, and classical rhetoric to systematize my studies.
+
+> General Grammar: Discovering and ordering facts of reality compromises basic, systematic **knowledge**.
 
 ## Who?
 - I am a software engineer and cloud / Linux / Ops enthusiast.
@@ -32,6 +35,8 @@ Hardware at my disposal:
 - Write declarative infrastructure as code to create idempotent solutions.
 
 ## Why?
+> Formal Logic: Developing the faculty of reason in establishing valid [i.e., non-contradictory] relationships among facts is systematic **understanding**.
+
 - Find the single best solution for a given scenario.
 - Solve practical needs of my home server and archive.
 - Have the ability to audit security.
@@ -52,6 +57,7 @@ Learn technologies relevant for cloud engineering and Ops roles:
 - Cron jobs
 
 ## How?
+> Classical Rhetoric: Applying knowledge and understanding expressively compromises **wisdom** or, in other words, it is systematically useable **knowledge and understanding**.
 
 ### 1. Home server
 - Create a universal solution to test and deploy a Linux server on an M1 laptop and spare-parts Linux PC.
