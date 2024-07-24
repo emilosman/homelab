@@ -29,6 +29,16 @@ resource "libvirt_domain" "terraform_test" {
       target_port = "0"
       target_type = "serial"
     }
+
+    # Disk configuration
+    disk {
+      volume_id = libvirt_volume.terraform_test.id
+    }
+
+    # Network configuration
+    network_interface {
+      # network_name = "default"
+    }
 }
 
 resource "libvirt_volume" "terraform_test" {
