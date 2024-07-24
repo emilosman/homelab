@@ -1,8 +1,5 @@
 # Homelab
 > _"Learning happens in the lab"_
-
-Using the Trivium method of general grammar, formal logic, and classical rhetoric to systematize my studies.
-
 > General Grammar: Discovering and ordering facts of reality compromises basic, systematic **knowledge**.
 
 ## Who?
