@@ -1,5 +1,6 @@
 # Homelab
 > _"Learning happens in the lab"_
+
 > General Grammar: Discovering and ordering facts of reality compromises basic, systematic **knowledge**.
 
 ## Who?
